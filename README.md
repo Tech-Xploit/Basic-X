@@ -1,42 +1,56 @@
-# BASIC-X Tool
+BASIC-X Tool
 
 BASIC-X is a tool designed for Termux users to easily install essential packages with one click.
 
-## Features
-- **One-click installation** of essential development tools.
-- **Basic utilities** for Termux like `git`, `curl`, `vim`, etc.
-- **Fast setup** with minimal user interaction.
-- **Simple command-line interface** with clear instructions.
-- **Customizable** to add extra packages as per your needs.
+Features
 
-## Installation
+One-click installation of essential development tools.
 
-Follow these simple steps to install **BASIC-X** on your Termux:
+Basic utilities for Termux like git, curl, vim, etc.
 
-### 1. Update and Upgrade Your System:
-```bash
+Fast setup with minimal user interaction.
+
+Simple command-line interface with clear instructions.
+
+Customizable to add extra packages as per your needs.
+
+
+Installation
+
+Follow these simple steps to install BASIC-X on your Termux:
+
+1. Update and Upgrade Your System:
+
 pkg update && pkg upgrade
 
-###2. Install Git to Clone the Repository:
+
+2. Install Git to Clone the Repository:
 
 pkg install git
 
-###3. Clone the BASIC-X Repository:
+
+3. Clone the BASIC-X Repository:
 
 git clone https://github.com/CyberX-Noob/BASIC-X.git
 
-###4. Navigate into the BASIC-X Directory:
+
+4. Navigate into the BASIC-X Directory:
 
 cd BASIC-X
 
-###5. Make the Script Executable:
+
+5. Make the Script Executable:
 
 chmod +x BASIC-X.sh
 
-###6. Run the Tool:
+
+6. Run the Tool:
 
 ./BASIC-X.sh
+
 The script will guide you through the installation process and install essential tools for development and system utilities. Follow the on-screen prompts.
+
+
 
 Installed Packages
 
@@ -107,21 +121,15 @@ Support
 
 If you encounter any issues or have questions, feel free to open an issue on GitHub. We’ll be happy to help!
 
-Developed By:
 
-CYBER-X
+---
+
+Developed By: CYBER-X
 
 
 ---
 
 Thank you for using BASIC-X! 🚀
 
-### How to Use This File:
-1. Copy the above content.
-2. Go to your GitHub repository.
-3. Click on the "Add File" button and choose "Create new file".
-4. Name the file `README.md`.
-5. Paste the content into the file and click "Commit new file".
 
-Your **README.md** file is now ready and will be displayed on the main page of your GitHub repository!
-
+---
