@@ -32,7 +32,7 @@ echo "| ___ \|  _  | \`--. \  | |  | |    |______| /   \ "
 echo "| |_/ /| | | |/\__/ / _| |_ | \__/\        / /^\ \ "
 echo "\____/ \_| |_/\____/  \___/  \____/        \/   \/ "
 echo -e "\033[0m"  # Reset color
-echo -e "\033[38;5;214mDeveloped by CYBER-X\033[0m\n"  # Text in orange
+echo -e "\033[38;5;214mDeveloped by CYBERX-Noob\033[0m\n"  # Text in orange
 
 # Get terminal width
 cols=$(tput cols)
