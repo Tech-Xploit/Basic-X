@@ -37,8 +37,8 @@ With **BASIC-X**, you no longer need to manually search for or install individua
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/CyberX-Noob/BASIC-X.git
-   cd BASIC-X
+   git clone https://github.com/Tech-Xploit/Basic-X.git
+   cd Basic-X
    ```
 
 2. **Give Execution Permission**  
@@ -55,11 +55,6 @@ With **BASIC-X**, you no longer need to manually search for or install individua
 
 ## **Usage**  
 Simply follow the on-screen instructions provided by the tool. Once installed, you can use **BASIC-X** anytime to reinstall or update essential packages.  
-
----
-
-## **Preview**  
-*Coming Soon: Screenshots and GIFs to showcase the interface.*  
 
 ---
 
