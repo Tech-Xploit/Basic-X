@@ -1,4 +1,4 @@
-![BASIC-X Banner](file-KQZ5vSGR3hPDxrbHch1WuP.png)
+
 
 # BASIC-X  
 ### **The Ultimate Basic Package Installer**  
