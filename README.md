@@ -1,6 +1,6 @@
-# Basic-X
+# BASIC-X  
 ### **The Ultimate Basic Package Installer**  
-Developed by **Tech-Xploit**  
+Developed by **CyberX-Noob**  
 
 ---
 
@@ -37,58 +37,49 @@ With **BASIC-X**, you no longer need to manually search for or install individua
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/Tech-Xploit/BASIC-X.git
+   git clone https://github.com/CyberX-Noob/BASIC-X.git
    cd BASIC-X
+   ```
 
-2. Give Execution Permission
+2. **Give Execution Permission**  
+   ```bash
+   chmod +x Basic-X.sh
+   ```
 
-chmod +x Basic-X.sh
-
-
-3. Run the Installer
-
-./Basic-X.sh
-
-
-
-
----
-
-Usage
-
-Simply follow the on-screen instructions provided by the tool. Once installed, you can use BASIC-X anytime to reinstall or update essential packages.
-
+3. **Run the Installer**  
+   ```bash
+   ./Basic-X.sh
+   ```  
 
 ---
 
-Preview
-
-Coming Soon: Screenshots and GIFs to showcase the interface.
-
+## **Usage**  
+Simply follow the on-screen instructions provided by the tool. Once installed, you can use **BASIC-X** anytime to reinstall or update essential packages.  
 
 ---
 
-Contributions
-
-We welcome contributions to improve BASIC-X. Feel free to:
-
-Submit feature requests
-
-Report bugs
-
-Fork the repository and submit pull requests
-
-
+## **Preview**  
+*Coming Soon: Screenshots and GIFs to showcase the interface.*  
 
 ---
 
-Author
-
-Developed with ❤️ by Tech-Xploit
-
+## **Contributions**  
+We welcome contributions to improve **BASIC-X**. Feel free to:  
+- Submit feature requests  
+- Report bugs  
+- Fork the repository and submit pull requests  
 
 ---
 
-License
+## **Author**  
+Developed with ❤️ by **CyberX-Noob**  
 
+---
+
+## **License**  
 This project is licensed under the MIT License.
+
+
+Make this me to copy easily and fix errors username Tech-Xploit
+
+Give me this code to easily copy
