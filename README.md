@@ -1,6 +1,6 @@
 # BASIC-X  
 ### **The Ultimate Basic Package Installer**  
-Developed by **CyberX-Noob**  
+Developed by **Tech-Xploit**  
 
 ---
 
@@ -72,7 +72,7 @@ We welcome contributions to improve **BASIC-X**. Feel free to:
 ---
 
 ## **Author**  
-Developed with ❤️ by **CyberX-Noob**  
+Developed with ❤️ by **Tech-Xploit**  
 
 ---
 
@@ -80,6 +80,3 @@ Developed with ❤️ by **CyberX-Noob**
 This project is licensed under the MIT License.
 
 
-Make this me to copy easily and fix errors username Tech-Xploit
-
-Give me this code to easily copy
