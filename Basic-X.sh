@@ -37,11 +37,11 @@ padding=$(( (cols - 27) / 2 ))  # 27 is the length of the "Welcome to BASIC-X To
 # Print "Welcome to BASIC-X Tool" centered
 printf "%${padding}s" ""  # Add leading spaces
 animate_text "*Welcome to BASIC-X Tool*" "38;5;51"  # Cyan blue
-sleep 0.2  # Reduced sleep for animation speed
+sleep 1  # Reduced sleep for animation speed
 
 # Print the next message
 animate_text "This tool will install all basic packages for Termux in one click." "1;32"  # Light green
-sleep 0.5  # Reduced sleep
+sleep 0.8  # Reduced sleep
 
 # Skip confirmation, proceed directly with installation
 
