@@ -1,23 +1,17 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-# Function to print animated text with color
+# Function to print animated text with color (optional, can be removed for speed)
 animate_text() {
   local text="$1"
   local color="$2"
   echo -e "\033[${color}m"  # Apply color
-  for (( i=0; i<${#text}; i++ )); do
-    echo -n "${text:i:1}"
-    sleep 0.05
-  done
+  echo -n "$text"
   echo -e "\033[0m"  # Reset color
 }
 
-# Function to animate package installation
-install_package() {
-  local package="$1"
-  animate_text "Installing $package..." "1;32"  # Green color for each package
-  pkg install $package -y
-  sleep 1
+# Function to install multiple packages at once in parallel
+install_packages() {
+  pkg install "$@" -y &
 }
 
 # Clear the screen
@@ -43,78 +37,48 @@ padding=$(( (cols - 27) / 2 ))  # 27 is the length of the "Welcome to BASIC-X To
 # Print "Welcome to BASIC-X Tool" centered
 printf "%${padding}s" ""  # Add leading spaces
 animate_text "*Welcome to BASIC-X Tool*" "38;5;51"  # Cyan blue
-sleep 0.5  # Add a small pause
+sleep 0.2  # Reduced sleep for animation speed
 
-# Print the next message on the same screen, starting from the left
+# Print the next message
 animate_text "This tool will install all basic packages for Termux in one click." "1;32"  # Light green
-sleep 1  # Pause after the message
+sleep 0.5  # Reduced sleep
 
-# New Screen for Time Warning
-clear
-animate_text "This tool may take some time to install the packages,please be patient...." "38;5;196"  # Candy red
-sleep 2
-
-# New Screen for Confirmation Prompt (On same line)
-clear
-echo -e "\033[1;32mDo you want to proceed with the installation? (y/n): \033[0m"
-read -n 1 answer  # -n 1 allows reading one character on the same line
-echo  # Move to the next line
-# Handle user response
-if [[ "$answer" != "y" ]]; then
-  clear
-  animate_text "Installation declined!" "1;31"  # Red color for declined message
-  exit 0
-fi
+# Skip confirmation, proceed directly with installation
 
 # Step 1: Updating and upgrading packages
 clear
 animate_text "Step 1: Updating and upgrading packages..." "1;32"  # Light green
 pkg update -y && pkg upgrade -y
-sleep 2
+sleep 0.5  # Reduced sleep
 
-# Step 2: Installing Basic Packages
+# Step 2: Installing Basic Packages in parallel
 clear
 animate_text "Step 2: Installing basic packages..." "1;32"  # Light green
-install_package "git"
-install_package "wget"
-install_package "curl"
-install_package "python"
-install_package "python2"
-install_package "nano"
-install_package "vim"
-install_package "zip"
-install_package "unzip"
-sleep 2
+install_packages git wget curl python python2 nano vim zip unzip
 
-# Step 3: Installing System Utilities
+# Step 3: Installing System Utilities in parallel
 clear
 animate_text "Step 3: Installing system utilities..." "1;32"  # Light green
-install_package "htop"
-install_package "tree"
-install_package "tmux"
-install_package "screen"
-install_package "busybox"
-install_package "dos2unix"
-sleep 2
+install_packages htop tree tmux screen busybox dos2unix
 
-# Step 4: Installing Development Tools
+# Step 4: Installing Development Tools in parallel
 clear
 animate_text "Step 4: Installing development tools..." "1;32"  # Light green
-install_package "clang"
-install_package "make"
-install_package "gdb"
-sleep 2
+install_packages clang make gdb
+
+# Wait for all background processes to finish
+wait
 
 # Completion Message
 clear
-animate_text "Installation Complete!" "1;34"  # Changed completion color to blue (1;34)
+animate_text "Installation Complete!" "1;34"  # Blue color
 animate_text "All required packages have been installed successfully." "1;34"
-sleep 1  # Sleep after completion message
+sleep 0.5  # Reduced sleep
 
 # Thank You Message in Aqua Blue
 clear
 animate_text "Thank you for using BASIC-X Tool!!" "38;5;51"  # Aqua blue color
-sleep 2
+sleep 0.5  # Reduced sleep
 
 # Exit
 exit 0
